@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Peta</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("images/bgaanimal.jpg");
+      background-position: center;
+      background-size: 100;
+      background-attachment: fixed;
+    }
+
+    .container {
+      width: 1024px;
+      padding: 10px 50px 0px 50px;
+      margin: 10px auto;
+    }
+
+    .map {
+      display: flex;
+      gap: 0;
+    }
+
+    .map img {
+      cursor: pointer;
+    }
+
+    .map img:hover {
+      border-top: 3px solid #ff0000;
+      border-bottom: 3px solid #ff0000;
+      border-left: 3px solid #ff0000;
+      border-right: 3px solid #ff0000;
+      transition: border-color 0.3s;
+    }
+
+    .image-box {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      gap: 0px;
+      object-fit: contain;
+      object-position: center;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: "Papyrus", fantasy;
+      margin-bottom: 0px;
+      color: rgb(249, 248, 242);
+      font-size: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Peta Persebaran Fauna di Indonesia</h1>
+  <div class="map container">
+    <div class="image-box">
+      <a href="asiatis.html">
+        <img src="images/1.png" alt="Peta Fauna 1">
+      </a>
+    </div>
+    <div class="image-box">
+      <a href="peralihan.html">
+        <img src="images/2.png" alt="Peta Fauna 2">
+      </a>
+    </div>
+    <div class="image-box">
+      <a href="australis.html">
+        <img src="images/3.png" alt="Peta Fauna 3">
+      </a>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="home.html" style="text-decoration: none; background-color: #1aba45; color: #fff; font-family: Monaco, monospace; padding: 10px 20px; border-radius: 10px;">kembali ke home</a>
+  </div>
+</body>
+
+</html>

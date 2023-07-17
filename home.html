@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("images/bganime.jpg");
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 0vh;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .qa-box {
+      max-width: 600px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .question {
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      padding-left: 0px;
+      font-family: "Monaco", monospace;
+    }
+
+    .question::before {
+      content: "▼";
+      position: absolute;
+      right: 0;
+    }
+
+    .answer {
+      display: none;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-family: "Monaco", monospace;
+    }
+
+    .next-button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .next-button {
+      width: 200px;
+      height: 50px;
+      background-color: #ccc;
+      color: #483c3c;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .next-button:hover {
+      background-color: #999;
+    }
+
+    .title1 {
+      font-weight: bold;
+      font-family: "Lucida Handwriting", sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .title2 {
+      font-weight: bold;
+      font-family: "Papyrus", sans-serif;
+      margin-bottom: 10px;
+    }
+  </style>
+  <script>
+    function toggleAnswer(id) {
+      var answer = document.getElementById(id);
+      answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title1">Selamat Datang</h1>
+    <h2 class="title2">"Mari Kita Belajar Tentang Persebaran Fauna di Indonesia"</h2>
+    <div class="qa-box">
+
+      <div class="title2">Mungkin kamu ingin tahu ... </div>
+      <div>-------------------------------------------------------------------------------------------------------------</div>
+
+      <div class="question" onclick="toggleAnswer('answer1')">Apa yang dimaksud fauna?</div>
+      <div class="answer" id="answer1">Menurut KBBI, fauna adalah seluruh kehidupan hewan suatu habitat, daerah, atau strata geologi tertentu. Kata "fauna" juga berasal dari bahasa Latin yang artinya alam hewan. Sementara dalam kepercayaan Romawi, fauna adalah "faunus" yang merupakan dewa hutan dan kesuburan ladang dan ternak.</div>
+      <div>-------------------------------------------------------------------------------------------------------------</div>
+
+      <div class="question" onclick="toggleAnswer('answer2')">Apa yang dimaksud dengan garis weber dan garis wallace?</div>
+      <div class="answer" id="answer2">Garis Wallace membentang dari Selat Lombok menuju Selat Makassar dan berakhir di Filipina bagian Selatan. Sementara garis Weber merupakan garis batas yang memisahkan wilayah fauna tipe Peralihan dengan fauna tipe Australis. Garis ini membentang dari Laut Arafura menuju Laut Banda dan berakhir di Laut Maluku.</div>
+      <div>-------------------------------------------------------------------------------------------------------------</div>
+
+      <div class="question" onclick="toggleAnswer('answer3')">Tersebar ke berapa bagian mana saja fauna di Indonesia?</div>
+      <div class="answer" id="answer3">Persebaran Fauna di Indonesia terbagi menjadi 3 wilayah yaitu Fauna Asiatis, Fauna Peralihan dan Fauna Australis yang dibatasi oleh Garis Wallace dan Garis Weber.</div>
+      <div>-------------------------------------------------------------------------------------------------------------</div>
+
+      <div class="question" onclick="toggleAnswer('answer4')">Lantas bagaimana bagian-bagian itu dapat terbentuk?</div>
+      <div class="answer" id="answer4">Bumi menjadi tempat hidup bagi beraneka ragam flora dan fauna. Keanekaragaman terutama untuk fauna di dunia sangat bergantung pada kondisi masing-masing wilayah. Letak geografis, kondisi lingkungan, iklim, cuaca, dan lain sebagainya, yang tidak sama di setiap kawasan, menjadi faktor penentu satu jenis flora atau fauna bisa berkembang atau tidak. Sudah jelas bahwa kondisi permukaan bumi tidak seragam. Karena itu, wajar kondisi keanekaragaman fauna di masing-masing wilayah berlainan.</div>
+      <div>-------------------------------------------------------------------------------------------------------------</div>
+
+      <div class="question" onclick="toggleAnswer('answer5')">Sepenting itu kah kita harus belajar ini?</div>
+      <div class="answer" id="answer5">Karena pada dasarnya keragaman hayati harus dijaga dan dilestarikan karena akan dapat menjadi sumber ilmu pengetahuan dan teknologi, sumber inspirasi pengembangan obat-obatan tradisional, penelitian mengenai rahasia lingkungan dan akan menjadi penunjang utama dalam kelangsungan hidup umat manusia pada umumnya.</div>
+      <div>-------------------------------------------------------------------------------------------------------------</div>
+
+      <div class="next-button-container">
+        <a href="peta.html" class="next-button">klik untuk ke peta</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
